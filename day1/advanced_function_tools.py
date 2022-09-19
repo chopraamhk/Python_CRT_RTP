@@ -10,7 +10,7 @@ def using_map():
     """Double the given number"""
     random_numbers = random.choices(range(200), k=10)
     print(f"{random_numbers = }")
-    print(f"{map(double_number, random_numbers) = }")
+    print(f"{list(map(double_number, random_numbers)) = }" ##map -> efficient way to not add all the data into memory
 
 
 def using_map_and_lambda():
@@ -28,9 +28,9 @@ def using_filter():
 
 
 def main():
-    using_map()
+    using_map()  ##can comment this and check
     using_map_and_lambda()
-    using_filter()
+    using_filter() ##can comment this and check
     return 0
 
 
